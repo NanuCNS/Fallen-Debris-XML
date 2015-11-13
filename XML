@@ -1,34 +1,40 @@
+<?xml version="1.0"?>
+
 <map proto="1.4.0">
-<name>Kryta</name>
-<version>1.9.4</version>
+
+<name>Fallen Debris</name>
+<version>1.0.0</version>
+
 <authors>
-<author uuid="10c1b730-49b9-4f75-9212-91facc371477"/>
-<!--   Qixit   -->
+<author uuid="77912861-9fc0-45fa-aac5-aa455614edbf"/>
+<!--   Nanu   -->
 </authors>
-<contributors>
-<contributor uuid="f690a591-348b-482e-a18d-7779d0c0a28c"/>
-<!--   mitchiii_   -->
-</contributors>
+
+
 <objective>
 Kill and survive. There are no teams, so watch your back!
 </objective>
+
 <score>
 <kills>1</kills>
 </score>
-<time>9m</time>
+
+<time>10m</time>
 <broadcasts>
-<alert after="2s">`f`lWelcome to `6`lKryta`f`l!</alert>
+<alert after="2s">`f`lWelcome to `6`lFallen Debris`f`l!</alert>
 <alert after="4s">
 `f`lThis map is an `6`lFFA map (free for all)`f`l, so there are no set teams. The player with the most points at the end of `6`l9 minutes `f`lwins!
 </alert>
 <tip after="15s" every="3m">
-`f`lOnce destroyed, melon blocks drop `6`lmelons `f`lfor trading with villagers!
+`f`lYou can found some `6`lloots `f`lin the map!
 </tip>
-<alert after="3m" every="3m">
+<alert after="2m" every="3m">
 `f`lThis map is an `6`lFFA map (free for all)`f`l, so there are no set teams. The player with the most points at the end of `6`lthe end of the match `f`lwins!
 </alert>
 </broadcasts>
-<players max="24" max-overfill="28" show-name-tags="false"/>
+
+<players max="20" max-overfill="24" show-name-tags="false"/>
+
 <spawns>
 <spawn kit="spawn" spread="true">
 <regions>
@@ -60,30 +66,16 @@ Kill and survive. There are no teams, so watch your back!
 <point yaw="-136">-7.5,29,342.5</point>
 <point yaw="-161">-4.5,23,359.5</point>
 <point yaw="-154">31.5,63,339.5</point>
-<point yaw="-22">-4.5,63,281.5</point>
-<point yaw="71">38.5,47,311.5</point>
-<point yaw="-90">46.5,46,330.5</point>
-<point yaw="0">54.5,49,289.5</point>
-<point yaw="-128">45.300,49,319.700</point>
-<point yaw="-145">41.5,52,345.5</point>
-<point yaw="133">-9.5,22,359.5</point>
-<point yaw="-25">-21.624,29,334.500</point>
-<point yaw="-124">-25,27,348.800</point>
-<point yaw="25">-6.5,57,254.5</point>
-<point yaw="-180">0.5,62,277.700</point>
-<point yaw="158">-11.300,60,287.700</point>
-<point yaw="95">35.5,42,258.59</point>
-<point yaw="-32">9.300,43,244.300</point>
-<point yaw="124">38.700,49,262.700</point>
-<point yaw="-101">19.5,50,269.5</point>
 </regions>
 </spawn>
+
 <default>
 <regions>
 <point yaw="-50">-7.5,63,294.5</point>
 </regions>
 </default>
 </spawns>
+
 <item-mods>
 <rule>
 <match>
@@ -146,81 +138,8 @@ Kill and survive. There are no teams, so watch your back!
 <potion amplifier="4" duration="5">regeneration</potion>
 </kit>
 </kits>
-<armorkeep>
-<item>melon</item>
-</armorkeep>
-<killreward>
-<item amount="8" slot="28">arrow</item>
-<item amount="1">golden apple</item>
-<item amount="2">melon</item>
-<kit id="kill-kit"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="2"/>
-</filter>
-<kit id="transition-kit"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="4"/>
-</filter>
-<kit id="transition-kit"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="6"/>
-</filter>
-<kit id="transition-kit"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="8"/>
-</filter>
-<kit id="transition-kit"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="10"/>
-</filter>
-<kit id="transition-kit"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="1"/>
-</filter>
-<kit id="kit-0"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="3"/>
-</filter>
-<kit id="kit-1"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="5"/>
-</filter>
-<kit id="kit-2"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="7"/>
-</filter>
-<kit id="kit-3"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="9"/>
-</filter>
-<kit id="kit-4"/>
-</killreward>
-<killreward>
-<filter>
-<kill-streak count="11"/>
-</filter>
-<kit id="kit-5"/>
-</killreward>
+
+
 <hunger>
 <depletion>off</depletion>
 </hunger>
