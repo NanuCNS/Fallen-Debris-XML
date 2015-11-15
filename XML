@@ -12,7 +12,7 @@
 
 
 <objective>
-Kill and survive. There are no teams, so watch your back!
+Kill and survive. There are no teams, so watch your back and prepare yourself!
 </objective>
 
 <score>
@@ -55,17 +55,6 @@ Kill and survive. There are no teams, so watch your back!
 <point yaw="89">-4.5,57,283.5</point>
 <point yaw="19">-21.5,56,287.5</point>
 <point yaw="20">-16.5,58,299.5</point>
-<point yaw="-170">-25.5,48,315.5</point>
-<point yaw="-53">-8.5,48,312.5</point>
-<point yaw="23">22.5,31,296.5</point>
-<point yaw="129">37.5,35,319.5</point>
-<point yaw="-167">15.5,35,330.5</point>
-<point yaw="128">24.5,62,338.5</point>
-<point yaw="55">36.5,42,304.5</point>
-<point yaw="-37">8.5,35,297.5</point>
-<point yaw="-136">-7.5,29,342.5</point>
-<point yaw="-161">-4.5,23,359.5</point>
-<point yaw="-154">31.5,63,339.5</point>
 </regions>
 </spawn>
 
@@ -77,22 +66,20 @@ Kill and survive. There are no teams, so watch your back!
 </spawns>
 
 <kit name="spawn">
-<potion duration="oo" amplifier="1">night vision</potion>
+<potion duration="5" amplifier="1">INVISIBILITY</potion>
 </kit>
-<kit name="scout" parents="spawn">
-<item slot="0" unbreakable="true" enchantment="knockback:1" name="`bBat">stone sword</item>
-<item slot="1" amount="32" name="`3Baseball">snow ball</item>
-<item slot="2" amount="5">golden apple</item>
-zs
-<item slot="3" amount="32">raw fish</item>
-<item slot="4" damage="16396">potion</item>
-<item slot="5" enchantment="knockback:2" name="`bHome Run">gold sword</item>
-<chestplate enchantment="protection projectile:2" unbreakable="true">leather chestplate</chestplate>
-<leggings unbreakable="true">chainmail leggings</leggings>
-<boots enchantment="protection fall:3" unbreakable="true">leather boots</boots>
-<potion duration="oo" amplifier="2">jump</potion>
-<potion duration="oo" amplifier="2">speed</potion>
-<potion duration="10" amplifier="1">heal</potion>
+
+<kit name="Soldier" parents="spawn">
+<item slot="0" unbreakable="true" enchantment="knockback:1" name="`bBattle sword">iron sword</item>
+<item slot="1" unbreakable="true" name="`bPistol">bow</item>
+<item slot="28" amount="16" name="`bAmmo">arrow</item>
+<item slot="2" damage="16396">potion</item>
+<item slot="8" amount="16">steak</item>
+
+
+<chestplate unbreakable="true">leather chestplate</chestplate>
+<leggings unbreakable="true">iron leggings</leggings>
+<boots unbreakable="true">iron boots</boots>
 </kit>
 <kit name="archer" parents="spawn">
 <item slot="0" unbreakable="true" name="`bDagger">wood sword</item>
