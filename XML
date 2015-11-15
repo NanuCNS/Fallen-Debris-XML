@@ -38,13 +38,23 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <spawns>
 <spawn kit="spawn" spread="true">
 <regions>
-<point yaw="160">2.5,31,362.5</point>
-<point yaw="-120">-28.5,22,341.5</point>
-<point yaw="-48">-5.5,31,329.5</point>
-<point yaw="-22">-27.5,35,328.5</point>
-<point yaw="-78">14.5,46,363.5</point>
-<point yaw="-124">39.5,48,349.5</point>
-<point yaw="139">28.5,51,330.5</point>
+<point yaw="180">18,7,47</point>
+<point yaw="90">-15,8,46</point>
+<point yaw="-118">-45.5,8,59.5</point>
+<point yaw="0">-54.5,7,35.5</point>
+<point yaw="-180">-45,8,37</point>
+<point yaw="-143">-45,20,35</point>
+<point yaw="-179">-16,7,21</point>
+<point yaw="-176">-41,7,15</point>
+<point yaw="-55">-43,12,9</point>
+<point yaw="-90">-18,4,20</point>
+<point yaw="-137">46.5,48,328.5</point>
+<point yaw="165">46.5,51,306.5</point>
+<point yaw="-48">39.5,49,282.5</point>
+<point yaw="-99">16.5,57,276.5</point>
+<point yaw="89">-4.5,57,283.5</point>
+<point yaw="19">-21.5,56,287.5</point>
+<point yaw="20">-16.5,58,299.5</point>
 <point yaw="-135">-5.5,65,290.5</point>
 <point yaw="24">-20.5,56,289.5</point>
 <point yaw="26">-15.5,57.5,301.5</point>
@@ -60,13 +70,13 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 
 <default>
 <regions>
-<point yaw="-50">-7.5,63,294.5</point>
+<point yaw="138">37.5,31,65</point>
 </regions>
 </default>
 </spawns>
 
 <kit name="spawn">
-<potion duration="5" amplifier="1">INVISIBILITY</potion>
+<potion duration="5" amplifier="1">resistance</potion>
 </kit>
 
 <kit name="Soldier" parents="spawn">
@@ -74,6 +84,7 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <item slot="1" unbreakable="true" name="`bPistol">bow</item>
 <item slot="28" amount="16" name="`bAmmo">arrow</item>
 <item slot="2" damage="16396">potion</item>
+<!--   Regeneration 21   -->
 <item slot="8" amount="16">steak</item>
 
 
