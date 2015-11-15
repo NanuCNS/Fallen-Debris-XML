@@ -152,35 +152,29 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <item>diamond sword</item>
 <item>red rose</item>
 </itemremove>
+
 <disabledamage>
-<damage>fall</damage>
 <damage>suffocation</damage>
 </disabledamage>
-<filters>
-<any id="breakable-blocks">
-<material>melon block</material>
-<material>chest</material>
-<material>long grass</material>
-<material>leaves</material>
-<material>leaves 2</material>
-<material>double plant</material>
-<material>red rose</material>
-</any>
+
 <deny id="use">
 <material>trap door</material>
 </deny>
 </filters>
 <regions>
+
 <apply use="use">
 <everywhere/>
 </apply>
+
 <apply block-physics="never">
 <everywhere/>
+
 </apply>
-<apply block="breakable-blocks" message="`f`lYou may not destroy this block!">
+<apply block="breakable-blocks" message="`f`lYou may not edit the map!">
 <everywhere/>
 </apply>
-<!--   2.5,51,256   -->
+
 
 
 
