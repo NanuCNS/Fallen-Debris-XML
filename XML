@@ -59,12 +59,16 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <point yaw="0">-13,7,-16</point>
 <point yaw="-38">-21,11,-21</point>
 <point yaw="-143">13,12,-29</point>
-<point yaw="165">46.5,51,306.5</point>
-<point yaw="-48">39.5,49,282.5</point>
-<point yaw="-99">16.5,57,276.5</point>
-<point yaw="89">-4.5,57,283.5</point>
-<point yaw="19">-21.5,56,287.5</point>
-<point yaw="20">-16.5,58,299.5</point>
+<point yaw="-143">13,12,-29</point>
+<point yaw="90">13,7,-25</point>
+<point yaw="0">22,7,-19</point>
+<point yaw="130">23,11,-8</point>
+<point yaw="-20">46,7,-19</point>
+<point yaw="-4">38,11,-16</point>
+<point yaw="113">48,7,5</point>
+<point yaw="-90">31,15,16</point>
+<point yaw="10">33,7,16</point>
+<point yaw="140">11,7,23</point>
 </regions>
 </spawn>
 
@@ -76,7 +80,7 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 </spawns>
 
 <kit name="spawn">
-<potion duration="5" amplifier="1">resistance</potion>
+<potion duration="5" amplifier="5">resistance</potion>
 </kit>
 
 <kit name="Soldier" parents="spawn">
