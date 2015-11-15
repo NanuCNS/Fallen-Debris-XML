@@ -79,6 +79,12 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 </default>
 </spawns>
 
+<classes family="databasin" restrict="false" sticky="false">
+<class name="Defender" description="Super armor and gear used to defend your dam." icon="diamond chestplate"/>
+<class name="Cannoneer" description="Fully stocked will all the TNT you could need." icon="tnt" default="true"/>
+<class name="Archer" description="Speedy and agile with a very powerful bow." icon="bow"/>
+</classes>
+
 <kit name="spawn">
 <potion duration="5" amplifier="5">resistance</potion>
 </kit>
@@ -87,8 +93,8 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <item slot="0" unbreakable="true" enchantment="knockback:1" name="`bBattle sword">iron sword</item>
 <item slot="1" unbreakable="true" name="`bPistol">bow</item>
 <item slot="28" amount="16" name="`bAmmo">arrow</item>
-<item slot="2" damage="16396">potion</item>
-<!--   Regeneration 21   -->
+<item slot="2" damage="8225">potion</item>
+<!--   Regeneration 2   -->
 <item slot="8" amount="16">steak</item>
 
 
@@ -96,56 +102,42 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <leggings unbreakable="true">iron leggings</leggings>
 <boots unbreakable="true">iron boots</boots>
 </kit>
-<kit name="archer" parents="spawn">
-<item slot="0" unbreakable="true" name="`bDagger">wood sword</item>
-<item slot="1" unbreakable="true" enchantment="arrow damage:3;arrow infinite:1" name="`3Longbow">bow</item>
-<item slot="28" amount="1">arrow</item>
+
+<kit name="Sniper" parents="spawn">
+<item slot="0" unbreakable="true" enchantment="power:3" name="`bSniper gun">bow</item>
+<item slot="27" amount="32">arrow</item>
+<item slot="1" unbreakable="true" name="`3Knief">wooden sword</item>
 <item slot="2" damage="8261">potion</item>
-<item slot="29" damage="8261">potion</item>
-<!--   instant health 1   -->
-<item slot="3" amount="32">cookie</item>
-<item slot="4" damage="16388">potion</item>
-<!--   poison 1   -->
-<item slot="5" damage="8226">potion</item>
-<!--   speed 2   -->
+<!--   night vision 1   -->
+<item slot="8" amount="8">cooked chicken</item>
+
 <helmet unbreakable="true">chainmail helmet</helmet>
-<chestplate enchantment="protection projectile:3" unbreakable="true">chainmail chestplate</chestplate>
-<leggings unbreakable="true">leather leggings</leggings>
-<boots unbreakable="true">chainmail boots</boots>
-<potion duration="10" amplifier="1">heal</potion>
 </kit>
-<kit name="soldier" parents="spawn">
-<item slot="0" unbreakable="true" name="`bBroadsword">iron sword</item>
-<item slot="1" unbreakable="true" name="`3Reserve Bow">bow</item>
-<item slot="8" amount="8">arrow</item>
+
+<kit name="Medic" parents="spawn">
+<item slot="0" unbreakable="true" enchantment="knockback:5" name="`Vaccine">diamond hoe</item>
+<item slot="1"  amount="1" name="`3Medicine">enchanted golden apple</item>
 <item slot="2" damage="8225">potion</item>
-<!--   regeneration 2   -->
-<item slot="3" amount="32">cooked beef</item>
-<item slot="4" unbreakable="true" enchantment="knockback:1" name="`bEnraged Axe">gold axe</item>
-<item slot="5" damage="16424">potion</item>
-<!--   weakness 1   -->
-<helmet unbreakable="true">diamond helmet</helmet>
-<chestplate enchantment="protection explosions:3;protection projectile:1">iron chestplate</chestplate>
-<leggings unbreakable="true">chainmail leggings</leggings>
-<boots enchantment="protection fall:1">iron boots</boots>
-<potion duration="oo" amplifier="1">slow</potion>
-<potion duration="10" amplifier="1">heal</potion>
-</kit>
-<kit name="engineer" parents="spawn">
-<item slot="0" unbreakable="true" name="`bShortsword">stone sword</item>
-<item slot="1" unbreakable="true" enchantment="arrow damage:1" name="`3Shortbow">bow</item>
-<item slot="8" amount="40">arrow</item>
-<item slot="2" amount="10">golden apple</item>
-<item slot="3" amount="32">cooked chicken</item>
-<item slot="4" amount="64">glass</item>
-<item slot="31" amount="64" damage="3">glass</item>
-<item slot="5" amount="7" damage="4">web</item>
-<helmet>gold helmet</helmet>
-<chestplate enchantment="protection explosions:3">iron chestplate</chestplate>
-<leggings unbreakable="true">chainmail leggings</leggings>
-<boots unbreakable="true">leather boots</boots>
-<potion duration="oo" amplifier="3">fast digging</potion>
-<potion duration="10" amplifier="1">heal</potion>
+<!--   Instant health 2   -->
+<item slot="7" amount="1">milk</item>
+<item slot="8" amount="4" >golden apple</item>
+
+<helmet unbreakable="true">golden helmet</helmet>
+<chestplate unbreakable="true">iron chestplate</chestplate>
+<leggings unbreakable="true">iron leggings</leggings>
+
+<kit name="Assasin" parents="spawn">
+<item slot="0" enchantment="sharpness:5" name="`bPower rod">blaze rod</item>
+<item slot="1" unbreakable="true" enchantment="arrow damage:5" name="`3Short gun">bow</item>
+<item slot="28" amount="1" name="`3One shot kill!">arrow</item>
+<item slot="2" damage="8225">potion</item>
+<!--   Invisibility   -->
+<item slot="7" damage="8226">potion</item>
+<!--   Speed 2   -->
+<item slot="8" amount="1" name="`bFood">cooked mutton</item>
+
+<chestplate>leather chestplate</chestplate>
+
 </kit>
 </kits>
 
