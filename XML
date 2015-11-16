@@ -83,7 +83,7 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <class name="Soldier" description="An average class for normal players!" icon="iron sword" default="true"/>
 <class name="Sniper" description="Shoot the enemies with your powerful gun!" icon="bow"/>
 <class name="Medic" description="Heal yourself with a lot of kit." icon="golden apple"/>
-<class name="Assasin" description="Speedy and agile with a very powerful rod." icon="blaze rod"/>
+<class name="Assassin" description="Speedy and agile with a very powerful rod." icon="blaze rod"/>
 </classes>
 
 <kit name="spawn">
@@ -127,7 +127,7 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <chestplate unbreakable="true">iron chestplate</chestplate>
 <leggings unbreakable="true">iron leggings</leggings>
 
-<kit name="Assasin" parents="spawn">
+<kit name="Assassin" parents="spawn">
 <item slot="0" enchantment="sharpness:5" name="`bPower rod">blaze rod</item>
 <item slot="1" unbreakable="true" enchantment="arrow damage:5" name="`3Short gun">bow</item>
 <item slot="28" amount="1" name="`3One shot kill!">arrow</item>
