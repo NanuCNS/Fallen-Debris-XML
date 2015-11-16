@@ -80,9 +80,10 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 </spawns>
 
 <classes family="databasin" restrict="false" sticky="false">
-<class name="Defender" description="Super armor and gear used to defend your dam." icon="diamond chestplate"/>
-<class name="Cannoneer" description="Fully stocked will all the TNT you could need." icon="tnt" default="true"/>
-<class name="Archer" description="Speedy and agile with a very powerful bow." icon="bow"/>
+<class name="Soldier" description="An average class for normal players!" icon="iron sword" default="true"/>
+<class name="Sniper" description="Shoot the enemies with your powerful gun!" icon="bow"/>
+<class name="Medic" description="Heal yourself with a lot of kit." icon="golden apple"/>
+<class name="Assasin" description="Speedy and agile with a very powerful rod." icon="blaze rod"/>
 </classes>
 
 <kit name="spawn">
@@ -142,24 +143,24 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 </kits>
 
 
-<hunger>
-<depletion>off</depletion>
-</hunger>
 <itemremove>
-<item>chainmail chestplate</item>
+<item>iron chestplate</item>
 <item>iron helmet</item>
-<item>iron ingot</item>
-<item>diamond boots</item>
-<item>chest</item>
-<item>seeds</item>
-<item>sapling</item>
-<item>apple</item>
+<item>golden helmet</item>
+<item>iron leggings</item>
+<item>leather chestplate</item>
+<item>blaze rod</item>
+<item>cooked chicken</item>
+<item>bow</item>
+<item>steak</item>
+<item>golden apple</item>
 <item>arrow</item>
-<item>red mushroom</item>
-<item>diamond sword</item>
-<item>red rose</item>
+<item>milk</item>
+<item>iron sword</item>
+<item>wooden sword</item>
 </itemremove>
 
+<filter>
 <disabledamage>
 <damage>suffocation</damage>
 </disabledamage>
@@ -168,6 +169,7 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <material>trap door</material>
 </deny>
 </filters>
+
 <regions>
 
 <apply use="use">
@@ -181,7 +183,7 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <apply block="breakable-blocks" message="`f`lYou may not edit the map!">
 <everywhere/>
 </apply>
-
+</region>
 
 
 
