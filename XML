@@ -3,7 +3,7 @@
 <map proto="1.4.0">
 
 <name>Fallen Debris</name>
-<version>1.0.0</version>
+<version>3.0.0</version>
 
 <authors>
 <author uuid="77912861-9fc0-45fa-aac5-aa455614edbf"/>
@@ -26,7 +26,7 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 `f`lThis map is an `6`lFFA map (free for all)`f`l, so there are no set teams. The player with the most points at the end of `6`l9 minutes `f`lwins!
 </alert>
 <tip after="15s" every="3m">
-`f`lYou can found some `6`lloots `f`lin the map!
+`f`lYou can found some `6`lTNT Spawner`f`l in the middle of tha map !
 </tip>
 <alert after="2m" every="3m">
 `f`lThis map is an `6`lFFA map (free for all)`f`l, so there are no set teams. The player with the most points at the end of `6`lthe end of the match `f`lwins!
@@ -83,7 +83,12 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <class name="Soldier" description="An average class for normal players!" icon="iron sword" default="true"/>
 <class name="Sniper" description="Shoot the enemies with your powerful gun!" icon="bow"/>
 <class name="Medic" description="Heal yourself with a lot of kit." icon="golden apple"/>
-<class name="Assassin" description="Speedy and agile with a very powerful rod." icon="blaze rod"/>
+<class name="Assassin" description="Sneaking and kill..." icon="diamond sword"/>
+<class name="Blocker" description="Good for defend and bad at attack" icon="diamond chestplate"/>
+<class name="Flamer" description="Burn it all !" icon="flint and steel"/>
+<class name="Specialist" description="Just special." icon="golden sword"/>
+<class name="Scientist" description="Experiment for my life." icon="water bottle"/>
+<class name="Winter" description="Santa was here." icon="snow ball"/>
 </classes>
 
 <kit name="spawn">
@@ -99,9 +104,9 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <item slot="8" amount="16">steak</item>
 
 
-<chestplate unbreakable="true">leather chestplate</chestplate>
-<leggings unbreakable="true">iron leggings</leggings>
-<boots unbreakable="true">iron boots</boots>
+<helmet unbreakable="true">iron helmet</helmet>
+<chestplate unbreakable="true">iron chestplate</chestplate>
+<leggings unbreakable="true">iron leggings</leggingss>
 </kit>
 
 <kit name="Sniper" parents="spawn">
@@ -126,6 +131,7 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <helmet unbreakable="true">golden helmet</helmet>
 <chestplate unbreakable="true">iron chestplate</chestplate>
 <leggings unbreakable="true">iron leggings</leggings>
+</kit>
 
 <kit name="Assassin" parents="spawn">
 <item slot="0" enchantment="sharpness:5" name="`bPower sword">wooden sword</item>
@@ -138,10 +144,95 @@ Kill and survive. There are no teams, so watch your back and prepare yourself!
 <chestplate>leather chestplate</chestplate>
 
 </kit>
+
+<kit name="Blocker" parents="spawn">
+<item slot="0" unbreakable="true" enchantment="knockback:1" name="`bBattle axe">stone axe</item>
+<item slot="1" unbreakable="true" name="`bShort gun">bow</item>
+<item slot="28" amount="8" name="`bAmmo">arrow</item>
+<item slot="2" damage="8225">potion</item>
+<!--   Fire resistance   -->
+<item slot="8" amount="4">pork chop</item>
+
+
+<helmet unbreakable="true">iron helmet</helmet>
+<chestplate unbreakable="true">diamond chestplate</chestplate>
+<leggings unbreakable="true">iron leggings</leggings>
+</kit>
+
+<kit name="Flamer" parents="spawn">
+<item slot="0" unbreakable="true" enchantment="fire aspect:1" name="`bEnergy stick">Blaze rod</item>
+<item slot="1" unbreakable="true" enchantment="flame:1" name="`bFlame thrower">bow</item>
+<item slot="28" amount="2" name="`bAmmo">arrow</item>
+<item slot="2" damage="8225">potion</item>
+<!--   Speed 2   -->
+<item slot="8" amount="4">Apple</item>
+
+
+
+<chestplate unbreakable="false">golden chestplate</chestplate>
+
+</kit>
+
+<kit name="Specialist" parents="spawn">
+<item slot="0" unbreakable="true" name="`bButter sword">golden sword</item>
+<item slot="1" amount="16" name="`bBob 'b' gawk">egg</item>
+<item slot="2" damage="8225">potion</item>
+<!--   Leaping 1   -->
+<item slot="8" amount="4">pumpkin pie</item>
+
+
+
+<chestplate unbreakable="true">iron chestplate</chestplate>
+
+</kit>
+
+<kit name="Scientist" parents="spawn">
+<item slot="0" unbreakable="true" enchantment="ksharpness:1" name="`bFalling star">nether star</item>
+<item slot="1" unbreakable="true" name="`bElectro gun">bow</item>
+<item slot="28" amount="8" name="`bAmmo">arrow</item>
+<item slot="2" damage="8225">potion</item>
+<!--   Poison   -->
+<item slot="8" amount="16">cooked salmon</item>
+
+
+<helmet unbreakable="true">diamond helmet</helmet>
+
+</kit>
+
+<kit name="Winter" parents="spawn">
+<item slot="0" unbreakable="true" name="`bSnow picker">iron shovel</item>
+<item slot="1" amount="16">snow ball</item>
+<item slot="28" amount="16">snow ball</item>
+<item slot="2" damage="8225">potion</item>
+<!--   Speed 2   -->
+<item slot="8" amount="16">cookie</item>
+
+
+<helmet unbreakable="true">iron helmet</helmet>
+
+</kit>
+
+
 </kits>
 
 
 <itemremove>
+
+<item>cooked mutton</item>
+<item>pork chop</item>
+<item>golden chestplate</item>
+<item>golden sword</item>
+<item>egg</item>
+<item>pumpkin pie</item>
+<item>diamond helmet</item>
+<item>nether star</item>
+<item>cooked salmon</item>
+<item>cookkie</item>
+<item>stone sword</item>
+<item>stone axe</item>
+<item>apple</item>
+<item>bow</item>
+<item>iron sword</item>
 <item>iron chestplate</item>
 <item>iron helmet</item>
 <item>golden helmet</item>
